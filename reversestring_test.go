@@ -16,9 +16,16 @@ func TestReversestring2(t *testing.T) {
 	}
 }
 
-func TestReversstring_backup(t *testing.T) {
+func TestReversstring_Rune(t *testing.T) {
 	want := "dcba  "
-	if got := Reversstring_backup("  abcd"); got != want {
+	if got := Reversstring_Rune("  abcd"); got != want {
+		t.Errorf("Reversstring_backup() = %q, want %q", got, want)
+	}
+}
+
+func TestBuiltInReverse(t *testing.T) {
+	want := "dcba  "
+	if got := ReverseBuiltIn("  abcd"); got != want {
 		t.Errorf("Reversstring_backup() = %q, want %q", got, want)
 	}
 }

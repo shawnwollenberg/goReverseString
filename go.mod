@@ -1,4 +1,4 @@
-module github.com/shawnwollenberg/goReverseString
+module goReverseString
 
 go 1.13
 
